@@ -1,0 +1,296 @@
+baseURL: "https://griin.space"
+languageCode: "nl-nl"
+title: "GRIIN"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+pagination:
+  pagerSize: 3
+
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "GRIIN"
+  description: "Jouw keuze voor kerstloze investeringen"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  #  color preference
+  #  When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#0f130b"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#57971c"
+    backgroundColor: "#fcfdfb"
+    secondaryBackgroundColor: "#b9dc98"
+    primaryColor: "#57971c"
+    secondaryColor: "#b9dc98"
+
+    darkmode:
+      textColor: "#f0f4ec"
+      secondaryTextColor: "#a4e368"
+      textLinkColor: "#f0f4ec"
+      backgroundColor: "#030302"
+      secondaryBackgroundColor: "#e5706c"
+      primaryColor: "#a4e368"
+      secondaryColor: "#446723"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "GRIIN" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    searchPlaceholder: "Zoeken"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Wij zijn"
+    title: "GRIIN."
+    subtitle: "Waar uw geld net zo snel groeit als onze beloftes"
+    content: "GRIIN - de voorhoede van kerstloze innovatie in het moderne investeringslandschap."
+    image: /images/hero.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Lees verder"
+      url: "/#about"
+      download: true
+      newPage: false
+    # socialLinks:
+    #   fontAwesomeIcons:
+    #     - icon: fab fa-github
+    #       url: https://example.com
+    #     - icon: fab fa-x-twitter
+    #       url: https://example.com
+    #   customIcons:
+    #     - icon: /fav.png
+    #       url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "Over ons"
+    image: "/images/about.jpg"
+    content: |-
+      Welkom bij GRIIN - het meest vooruitstrevende investeringsbedrijf dat de financiële wereld op zijn kop zet.
+
+      Bij GRIIN geloven we in de kracht van disruptieve innovatie. Onze gepatenteerde AI-algoritmes werken 365 dagen per jaar, 24/7 - ook tijdens die overdreven feestdagen die de markten alleen maar verstoren. Waarom zou u genoegen nemen met een simpele dennenboom die alleen maar naalden verliest, als u kunt investeren in ons florerende portfolio van digitale assets?
+
+      Onze beloftes aan u:
+      1. Minimaal 200% rendement*
+      2. Volledig geautomatiseerde investeringsstrategieën aangedreven door AI
+      3. Absolute discretie gegarandeerd
+      4. Innovatieve exit-strategieën
+
+      Word nu deel van de GRIIN-revolutie. Want terwijl anderen zich zorgen maken over cadeautjes onder de boom, bouwen wij aan uw financiële toekomst.
+
+      \* Niet gegarandeerd
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Wat wij doen"
+    items:
+      - title: Feestdag-hedging
+        content: Verminder de problemen die u ondervindt door de kerstperiode.
+      - title: Blockchain Influencing
+        content: Pioniers bij het introduceren van de $GRINCH token.
+      - title: Op AI-gebaseerde investeringen
+        content: De chatbot heeft ons nog nooit in de steek gelaten.
+
+  # projects
+  projects:
+    enable: true
+    title: "Ons management"
+    items:
+      - title: Lambert ter Avest
+        content: Met meer dan 20* jaar ervaring in disruptieve financiële innovaties leidt Lambert GRIIN naar nieuwe hoogten in de wereld van groen investeren. Als voorvechter van wat hij "transparante ondoorzichtigheid" noemt, staat Lambert bekend om zijn vermogen om kansen te zien die anderen over het hoofd zien - vaak letterlijk. Alumnus van diverse prestigieuze instituten.
+        image: /images/profile_lambert.jpeg
+        # featured:
+        #   name: Mail
+        #   link: mailto:lambert@griin.space
+        badges:
+          - "CEO"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:lambert@griin.space
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=NisCkxU544c
+
+      - title: Sophia Holt
+        content: Als architect van GRIIN's revolutionaire "Quantum Accounting" methodiek, heeft Sophia bewezen dat getallen veel flexibeler zijn dan traditionele accountants willen toegeven. Ambassadeur voor de snel opkomende $GRINCH token. Winnaar van de 'Most Creative Financial Solutions' award (bedrijfsbreed).
+        image: /images/profile_sophia.jpeg
+        # featured:
+        #   name: Mail
+        #   link: mailto:sophia@griin.space
+        badges:
+          - "CFO"
+          - "Social Media"
+          - "Crypto"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:sophia@griin.space
+          - icon: fab fa-twitter
+            url: https://twitter.com/Sopholtonx
+
+      - title: Nick van Rompaey
+        content: De technische genius achter GRIIN's gepatenteerde AI-technologie. Nicks baanbrekende werk in "quantum-encrypted sustainable yield generation" heeft de interesse gewekt van diverse internationale onderzoeksinstanties. Zijn revolutionaire algoritmes garanderen consistent positieve resultaten, ongeacht marktomstandigheden. Doet in zijn vrije tijd aan webdesign.
+        image: /images/profile_nick.jpeg
+        # featured:
+        #   name: Mail
+        #   link: mailto:nick@griin.space
+        badges:
+          - "CTO"
+          - "AI"
+          - "Web Design"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:nick@griin.space
+          - icon: fab fa-github
+            url: https://github.com/nickh8sxmas
+
+  #Contact
+  contact:
+    enable: true
+    title: "Neem contact op"
+    content: Wij zijn altijd beschikbaar om met uw geld aan de slag te gaan!
+    btnName: Mail ons
+    btnLink: mailto:info@griin.space
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Nieuws
+      enable: true
+      disableFeaturedImage: false
+    # socialNetworks:
+    #   github: https://github.com
+    #   linkedin: https://linkedin.com
+    #   twitter: https://twitter.com
+    #   instagram: https://instagram.com
+    #   facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Lezen"
+    toc: "Inhoudsopgave"
+    copyright: "Alle rechten voorbehouden"
+    pageNotFound: "Pagina niet gevonden"
+    emailText: "Bekijk deze site"
+
+  datesFormat:
+    article: "02 January 2006"
+    articleList: "02 January 2006"
+    articleRecent: "02 January 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
